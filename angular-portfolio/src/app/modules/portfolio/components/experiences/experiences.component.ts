@@ -12,24 +12,17 @@ export class ExperiencesComponent {
   public arrayExperiences = signal<IExperiences[]>([
     {
       sumary: {
-        strong: "Projeto CRUD",
-        p: "Angular + Spring Boot"
+        strong: "Dev Mobile - Residência Tecnológica",
+        p: "Flutter"
       },
-      text: '<p> Desenvolvi um sistema de gerenciamento de de usuários utilizando Angular no frontend e Spring Boot no backend.</p>'
+      text: '<p>Na residência tecnológica GrowUp, fomos incumbidos pelo representante da renomada empresa Accenture de desenvolver um aplicativo mobile utilizando a avançada framework Flutter. Com determinação e colaboração, minha equipe e eu concebemos uma solução inovadora voltada para auxiliar os residentes de Recife. Como resultado, conseguimos desenvolver um aplicativo com foco em doações.</p>'
     },
     {
       sumary: {
-        strong: "FitInsight",
-        p: "HTML, CSS, Javascript, Python e Django"
+        strong: "Dev Front-End - Residência Tecnológica",
+        p: "HTML, CSS, Javascript"
       },
-      text: '<p>Junto aos meus colegas da faculdade desenvolvi um sistema para atender às necessidades de redes de academia. Utilizando uma IA para prever a frequência dos alunos, proporcionando maior controle sobre os alunos pela academia, utilizando no frontend HTML, CSS, e Javascript, Python no desenvolvimento da IA e Django no backend.</p>'
-    },
-    {
-      sumary: {
-        strong: "IDE de Fluxograma",
-        p: "HTML, CSS e Javascript"
-      },
-      text: 'Desenvolvi o frontend para uma IDE de fluxograma como parte de um projeto de extensão na faculdade.A IDE foi projetada para auxiliar estudantes iniciantes em programação.</p>'
+      text: '<p>Na residência de software RiseUp, eu e meu squad recebemos por desafio da Accenture desenvolver uma plataforma on-line de gerenciamento de estoque, para que fosse possível acessar de qualquer lugar a quantidade de produtos disponíveis, pesquisar um produto específico para obter suas informações, cadastrar novos produtos e/ou editar.</p>'
     }
   ])
 }
