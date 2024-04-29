@@ -1,4 +1,108 @@
-header > img{
-    border-radius: 100px;
-    border: 1px solid #6c2e6a;
+:host{
+    &::before{
+        content: '';
+        display: flex;
+        width: 100%;
+        height: 150px;
+        margin-bottom: -65px;
+        background: var(--roxo);
+    }
+
+    header, aside{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header{
+        img{
+            border-radius: 100px;
+            border: 5px var(--areia) solid;
+        }
+    }
+
+    aside{
+        p{
+            text-align: center;
+        }
+
+        nav ul, section{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        nav{
+            margin: 20px 0;
+
+            ul{
+
+                li{
+                    a{
+                    width: 250px;
+                    }
+                }
+            }
+        }
+
+        section{
+            figure{
+                width: 335px;
+                height: 77px;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+
+                border: 1px solid var(--areia);
+                border-radius: 5px;
+
+                figcaption{
+                    a{
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+                        flex-direction: column;
+
+                        p{
+                            margin: 3px 0;
+                        }
+
+                        strong{
+                            color: var(--white);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 750px){
+        aside{
+            nav{
+                ul{
+                    flex-direction: column;
+                    gap: 15px;
+
+                    li, li a{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        section{
+            flex-direction: column;
+            gap: 15px;
+
+            figure{
+                width: 100%;
+            }
+        }
+    }
 }
