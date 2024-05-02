@@ -1,5 +1,5 @@
-<header style="color: rgb(61, 18, 101);">
-    <h2>{{ getData()?.title }}</h2>
+<header>
+    <h2 mat-dialog-title>{{ getData()?.title }}</h2>
 
     <button (click)="closeDialog()">
         <img src="assets/icons/dialog/close.svg" 
@@ -14,7 +14,7 @@
 
     <nav>
         @for (item of getData()?.links; track $index) {
-            <a [href]="item.href" target="_blank" class="btn btn-primary">
+            <a [href]="item.href" target="_blank" class="btn-dialog">
                 {{ item.name }}
             </a>
         }

@@ -6,6 +6,10 @@
     align-items: center;
     flex-direction: column;
 
+    p{
+        color: var(--areia);
+    }
+
 
     h2{
         text-align: center;
@@ -24,6 +28,10 @@
         transition: 500ms ease-out;
     }
 
+    article{
+        color: var(--areia);
+    }
+
     summary{
         cursor: pointer;
         display: flex;
@@ -38,6 +46,7 @@
 
             display: flex;
             flex-direction: column;
+            color: var(--areia);
         }
     }
 
