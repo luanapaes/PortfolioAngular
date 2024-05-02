@@ -1,1 +1,22 @@
-<h1 style="color: red;">Hello, Girls!</h1>
+<header style="color: rgb(61, 18, 101);">
+    <h2>{{ getData()?.title }}</h2>
+
+    <button (click)="closeDialog()">
+        <img src="assets/icons/dialog/close.svg" 
+        alt="Botão para fechar a caixa de diálogo.">
+    </button>
+</header>
+
+<mat-dialog-content>
+    <h3>Descrição</h3>
+
+    <article [innerHTML]="getData()?.description"></article>
+
+    <nav>
+        @for (item of getData()?.links; track $index) {
+            <a [href]="item.href" target="_blank" class="btn btn-primary">
+                {{ item.name }}
+            </a>
+        }
+    </nav>
+</mat-dialog-content>
