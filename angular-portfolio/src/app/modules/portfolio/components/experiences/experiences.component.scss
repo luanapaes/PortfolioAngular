@@ -55,7 +55,6 @@
         &:not([open]){
             summary{
                 &::after{
-                    
                     content: url("../../../../../assets/icons/chevron-down.svg");
                     margin-top: 5px;
                 }
