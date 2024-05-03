@@ -19,7 +19,7 @@ export class ProjectsComponent {
     {
       src: 'assets/img/projects/crud-project.png',
       alt: 'Projeto CRUD',
-      title: 'Projeto CRUD',
+      title: 'Projeto Angular para Gerenciamento de Usuários com API Spring Boot',
       width: '100px',
       height: '51px',
       description: '<p>Este projeto Angular foi desenvolvido para realizar operações básicas de gerenciamento de usuários, incluindo cadastro, edição, exclusão e visualização de informações.</p>',
